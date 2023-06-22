@@ -1,0 +1,10 @@
+[Unit]
+Description = Project:Time_processing
+After = multi-user.target
+
+[Service]
+Type = idle
+ExecStart = /usr/bin/python3 /var/www/roboreactor/Time_processing.py
+
+[Install]
+WantedBy = multi-user.target
